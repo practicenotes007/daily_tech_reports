@@ -1,0 +1,83 @@
+// 变量
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$background-color: #f8f9fa;
+$text-color: #333;
+
+// 全局样式
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: $text-color;
+    background-color: $background-color;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+// 头部样式
+.site-header {
+    background-color: $primary-color;
+    padding: 1rem 0;
+    color: white;
+    
+    .site-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+// 文章列表样式
+.post-list {
+    list-style: none;
+    padding: 0;
+    
+    .post-item {
+        margin-bottom: 2rem;
+        padding: 1rem;
+        background: white;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        
+        h2 {
+            margin-top: 0;
+            
+            a {
+                color: $primary-color;
+                text-decoration: none;
+                
+                &:hover {
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
+
+// 分类标签样式
+.category-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    
+    .tag {
+        background: $secondary-color;
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 20px;
+        font-size: 0.875rem;
+        text-decoration: none;
+        
+        &:hover {
+            background: darken($secondary-color, 10%);
+        }
+    }
+} 

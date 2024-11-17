@@ -1,0 +1,22 @@
+title: 技术进展追踪
+description: 每日技术新闻聚合
+baseurl: ""
+url: ""
+
+# 构建设置
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+
+# 集合设置
+collections:
+  categories:
+    output: true
+    permalink: /:collection/:name/
+
+# 默认设置
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post" 
