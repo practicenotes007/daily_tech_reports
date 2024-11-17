@@ -1,7 +1,7 @@
 title: 技术进展追踪
 description: 每日技术新闻聚合
-baseurl: ""
-url: ""
+baseurl: "/daily_tech_reports"
+url: "https://practicenotes007.github.io"
 
 # 构建设置
 markdown: kramdown
@@ -20,3 +20,6 @@ defaults:
       type: "posts"
     values:
       layout: "post" 
+
+# 主题设置
+theme: minima  # 使用默认主题 
